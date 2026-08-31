@@ -1,0 +1,35 @@
+.index-section {
+    margin: 120px 0;
+}
+.index-section .container {
+    max-width: none !important;
+    padding: 0 24px;
+}
+.index-section .content {
+    font-family: "Montserrat";
+    text-align: left;
+}
+.index-section .content>* {
+    margin-bottom: .8rem;
+}
+.index-section .title {
+    font-family: "Pathway Gothic One";
+    font-size: 1.9rem;
+}
+.index-section .description {
+    font-family: 'Times New Roman';
+    font-size: 1.1rem;
+    text-align: justify;
+}
+.index-section .items {
+    font-weight: 600;
+    padding: 1rem;
+}
+.index-section .items>* {
+    margin-bottom: .5rem;
+}
+@media (min-width: 992px) {
+    .index-section .container {
+        padding: 0 60px;
+    }
+}
