@@ -6,6 +6,7 @@
     --green: #3cba31;
   --red: #ff2b2b;
   --white: #fdfcfb;
+  --color: #faf9f6;
   --beige-light-1: #f8f6ea;
   --beige-light-2: #ebeabe;
   --beige: #ccc298;
@@ -14,6 +15,9 @@
   --brown-dark: #090504;
   --metal-blue: #7399b2;
   --metal-orange: #e0b97f;
+}
+body {
+    background-color: var(--color);
 }
 h1,h2,h3,h4,h5,h6 {
     text-transform: uppercase;
@@ -33,7 +37,7 @@ a:hover, button:hover {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
 }
 .site-header, .site-menu {
     background-color: var(--brown-dark);
@@ -79,10 +83,9 @@ a:hover, button:hover {
 }
 
 .site-header {
-    background-color: var(--white);
-    color: black;
-    border-bottom: 2px solid var(--beige-light-1);
-    box-shadow: 0 0 10px #0004;
+    background-color: var(--brown-dark);
+    color: white;
+    box-shadow: 0 0 10px #0002;
     text-transform: uppercase;
     font-size: 1.1rem;
 }
@@ -94,6 +97,8 @@ a:hover, button:hover {
 }
 .site-header .site-name {
     font-family: "Times New Roman";
+    letter-spacing: 1px;
+    font-size: .8rem;
 }
 
 .site-menu {
@@ -101,10 +106,10 @@ a:hover, button:hover {
     display: flex;
     flex-direction: column;
     top: 0;
-    right: -20rem;
+    right: -280px;
     z-index: 999;
     height: 100vh;
-    width: 20rem;
+    width: 280px;
     transition: 0.3s;
 }
 .menu-screen.active .site-menu {
@@ -112,14 +117,17 @@ a:hover, button:hover {
     transition: 0.3s;
     box-shadow: 0 0 10px #0004;
 }
-.site-menu .sim-bar {
-    padding: 1rem;
-}
-.site-menu .bar-row {
-    padding: 0rem;
-}
 .site-menu .com-bar {
-    padding: 1rem;
+    padding: 20px;
+}
+.site-menu .menu-section--black {
+    padding: 16px;
+}
+.site-menu .menu-section--black .sim-bar {
+    font-size: 1.2rem;
+    font-family: "Pathway Gothic One";
+    text-transform: uppercase;
+    padding: 12px;
 }
 .site-menu .com-bar .logo {
     width: 5rem;
@@ -127,22 +135,27 @@ a:hover, button:hover {
     border-radius: 50%;;
     border: 2px solid #fff;
 }
+.site-menu .com-bar .right-bar-col {
+    align-items: flex-start;
+}
 .site-menu .menu-section--white {
     background-color: var(--white);
     color: #111;
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Times New Roman', Times, serif; */
     padding: 1.4rem;
     flex-grow: 1;
 }
 .site-menu .menu-section--white .title {
     font-size: 1.5rem;
-    border-bottom: 2px solid #444;
-    padding: .1rem 0 .2rem;
+    font-family: 'Pathway Gothic One';
+    border-bottom: 2px solid var(--beige);
+    padding: 6px 0;
     text-align: left;
 }
 .site-menu .menu-section--white .item {
-    font-size: 1rem;
-    padding: 1rem 0;
+    font-family: 'Montserrat';
+    font-size: .9rem;
+    padding: 8px 0;
     text-align: left;
 }
 .close-menu {
@@ -162,13 +175,16 @@ a:hover, button:hover {
 /* ///// Footer ///// */
 
 .site-footer{
-    padding: 1rem;
-    margin-top: 160px;
-    border-top: 2px solid var(--beige);
+    padding: 2rem;
+    border-top: 2px solid var(--beige-light-2);
+    color: var(--brown);
 }
 
 /* small */
 @media (min-width: 576px) {
+    .site-header .site-name {
+        font-size: .9rem;
+    }
 }
 /* medium */
 @media (min-width: 768px) {    
@@ -182,7 +198,25 @@ a:hover, button:hover {
     .site-main .letreiro {
         font-size: 2.3rem;
     }
+    .site-header {
+        padding: 0 16px;
+    }
 }
+/* Bootstrap */
+.ph-container, .sm-container, .md-container {
+    margin: 0 auto;
+    padding: 0 18px;
+}
+.ph-container {
+    max-width: 375px;
+}
+.sm-container {
+    max-width: 576px;
+}
+.md-container {
+    max-width: 768px;
+}
+
 /* large */
 @media (min-width: 992px) {
     .site-main .row {
@@ -199,3 +233,23 @@ a:hover, button:hover {
 
 /* ///// Bootstrap ///// */
 
+
+
+/* ///// Geral ///// */
+.link-row {
+    margin: 8px;
+}
+.link-button {
+    font-family: "Montserrat";
+    background-color: var(--brown-dark);
+    color: white;
+    display: block;
+    padding: .7rem 1rem;
+    border-radius: 2px;
+    text-align: center;
+    width: fit-content;
+}
+.link-button:hover {
+    cursor: pointer;
+    background-color: #000;
+}
