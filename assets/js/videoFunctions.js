@@ -1,6 +1,6 @@
 // video-display é a caixa do <iframe>
 // main-content-layout é <main>, caixa das duas colunas
-function setVideoDisplay() {
+function setVideoDisplayPosition() {
     if (window.innerWidth > (window.innerHeight + 130)) {
         document.querySelector(".video-display").classList.add("video-display-lg");
         document.querySelector(".video-button-container").classList.add("video-button-container-lg");
@@ -17,16 +17,16 @@ let button = true;
 // video-button-content-box, faz aparecer o video-display
 function toggleVideo() {
     if (!button) {
-        //Botão - Tornar o Vídeo ATIVO/Vira Ocultar
+        //Tornar o Vídeo ATIVO     / Vira botão Ocultar
         document.querySelector(".video-display").classList.add("active");
-        setVideoDisplay();
+        setVideoDisplayPosition();
         button = true;
         
         document.querySelector(".video-button-container").style.bottom = "0px";
         document.querySelector(".video-button").innerText = "Ocultar Vídeo";
         document.querySelector(".yt-icon").style.display = "none";
     }else {
-        //Botão - Tornar o Vídeo DESATIVO/Vira Mostrar
+        //Tornar o Vídeo DESATIVO     / Vira botão Mostrar
         document.querySelector(".video-display").classList.remove("active");
         document.querySelector(".main-content-layout").classList.remove("main-content-layout--two-cols");
         button = false;
@@ -39,5 +39,5 @@ function toggleVideo() {
 
 // atribuicao dos eventos
 document.querySelector(".video-bottom-content-box").addEventListener('click', toggleVideo);
-window.addEventListener('load', setVideoDisplay);
-window.addEventListener('resize', ()=>{if (button){setVideoDisplay()}});
+window.addEventListener('load', setVideoDisplayPosition);
+window.addEventListener('resize', ()=>{if (button){setVideoDisplayPosition()}});
