@@ -1,5 +1,5 @@
 .presentation-section {
-    margin: 80px 0;
+    padding: 80px 0;
 }
 .presentation-section .content {
     font-family: "Montserrat";
@@ -41,6 +41,8 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 8px;
+    display: flex;
+    gap: 8px;
 }
 /* @media (min-width: 992px) {
     .presentation-section .container {
