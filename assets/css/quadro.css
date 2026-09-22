@@ -4,6 +4,7 @@
 }
 .main-layout .main-content {
     width: 100%;
+    transition: 0.5s;
 }
 .main-layout--two-cols>* {
     width: 50% !important;
@@ -200,6 +201,17 @@
     align-items: flex-start;
     height: 34px;
     padding: 0 4px 4px;
+    transition: 0.8s;
+}
+.video-bottom-content-box {
+    display: flex;
+    flex-direction: column;
+
+    cursor: pointer;
+    padding: 4px 6px;
+    background-color: #000;
+    border-radius: 2px;
+    color: #fff;
 }
 .video-button-container-lg {
     width: 50%;
@@ -208,10 +220,17 @@
 .video-button-container .video-button {
     font-family: "Montserrat";
     font-size: 12px;
-    display: block;
+    /* display: block;
     padding: 4px 6px;
     background-color: #000;
     border-radius: 2px;
-    color: #fff;
+    color: #fff; */
     height: 30px;
+}
+.video-button-container .yt-icon {
+    display: none; 
+    height: 30px;
+    width: auto; 
+    margin: 0 0 4px 0;
+    align-self: center;
 }
