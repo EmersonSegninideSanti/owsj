@@ -40,6 +40,13 @@ a:hover, button:hover {
     width: 100%;
     z-index: 999;
 }
+.header-wrapper a, .header-wrapper button {
+    transition: opacity .2s ease-out;
+}
+.header-wrapper a:hover, .header-wrapper button:hover {
+    opacity: 75%;
+    transition: opacity .2s ease-out;
+}
 .site-header, .site-menu {
     background-color: var(--brown-dark);
     box-shadow: 0 0 3px #1111;

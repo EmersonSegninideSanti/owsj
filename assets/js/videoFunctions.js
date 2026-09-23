@@ -15,12 +15,12 @@ function setVideoDisplayPosition() {
 function toggleVideo() {
     if (!button) {
         //Tornar o Vídeo ATIVO     / Vira botão Ocultar
-        document.querySelector(".video-display").classList.add("active");
         setVideoDisplayPosition();
+        document.querySelector(".video-display").classList.add("active");
         button = true;
         
         document.querySelector(".video-button-container").style.bottom = "0px";
-        document.querySelector(".video-button").innerText = "Ocultar Vídeo";
+        document.querySelector(".video-button-text").innerText = "Ocultar Vídeo";
         document.querySelector(".yt-icon").style.display = "none";
     }else {
         //Tornar o Vídeo DESATIVO     / Vira botão Mostrar
@@ -29,13 +29,13 @@ function toggleVideo() {
         button = false;
 
         document.querySelector(".video-button-container").style.bottom = "35px";
-        document.querySelector(".video-button").innerText = "Mostrar Vídeo";
+        document.querySelector(".video-button-text").innerText = "Mostrar Vídeo";
         document.querySelector(".yt-icon").style.display = "flex";
     }
 }
 
 let button = true;
 // atribuicao dos eventos
-document.querySelector(".video-bottom-content-box").addEventListener('click', toggleVideo);
-window.addEventListener('load', setVideoDisplayPosition);
+document.querySelector(".video-button").addEventListener('click', toggleVideo);
+window.addEventListener('load', ()=>{setVideoDisplayPosition();document.querySelector(".video-display").classList.add("active");});
 window.addEventListener('resize', ()=>{if (button){setVideoDisplayPosition()}});

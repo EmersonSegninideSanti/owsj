@@ -23,6 +23,9 @@
 .container--quadro {
     padding: 5vh 1rem 5vh;
 }
+.quadros-section {
+    padding-bottom: 50vh;
+}
 .quadro {
     background-color: #fcfcfc;
     border: 4px solid var(--beige);
@@ -52,11 +55,11 @@
 }
 
 .quadro a {
-    color: blue;
     font-weight: 600;
+    text-decoration: underline;
 }
 .quadro a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .quadro-item:nth-child(1) {
@@ -201,38 +204,35 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    height: 34px;
+    height: 35px;
     padding: 0 4px 4px;
     transition: 0.8s;
-}
-.video-bottom-content-box {
-    display: flex;
-    flex-direction: column;
-
-    cursor: pointer;
-    padding: 4px 6px;
-    background-color: #000;
-    border-radius: 2px;
-    color: #fff;
+    bottom: 35;
 }
 .video-button-container-lg {
     width: 50%;
     /* bottom: 60px; */
 }
 .video-button-container .video-button {
-    font-family: "Montserrat";
-    font-size: 12px;
-    /* display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 4px 6px;
     background-color: #000;
     border-radius: 2px;
-    color: #fff; */
-    height: 30px;
+    color: #fff;
+    font-family: "Montserrat";
+    font-size: 12px;
+}
+.video-button-container .video-button .video-button-text {
+    display: block;
 }
 .video-button-container .yt-icon {
     display: none; 
     height: 30px;
     width: auto; 
     margin: 0 0 4px 0;
-    align-self: center;
 }
+/* .video-button-container .video-button.active .yt-icon {
+    display: block;
+} */
