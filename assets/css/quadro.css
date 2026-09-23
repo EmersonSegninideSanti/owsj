@@ -6,7 +6,7 @@
     width: 100%;
     transition: 0.5s;
 }
-.main-layout--two-cols>* {
+.main-layout--two-cols > .main-content { /* .main-layout--two-cols>* */
     width: 50% !important;
 }
 .main-layout .video-spacer {
@@ -184,11 +184,13 @@
     margin: 0px auto;
     background-color: var(--brown-dark);
     padding: 5px;
+    border-radius: 5px;
 }
 .video-display iframe {
     display: block;
     width: 100%;
-    height: fit-content;
+    height: auto;
+    aspect-ratio: 18 / 9;
 }
 
 .video-button-container {
