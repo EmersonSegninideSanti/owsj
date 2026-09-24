@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <title>Des. Front-End</title>
+</head>
+<body>
+    <div class="header-wrapper">
+        <header class="site-header">
+            <div class="com-bar">
+                <div class="bar-row">
+                    <div class="bar-col left-bar-col"><a href="#">Home</a></div>
+                    <div class="bar-col"><a href="#" class="site-name">www.owsj.com.br</a></div>
+                    <div class="bar-col right-bar-col"><button onclick="document.querySelector('.menu-screen').classList.toggle('active')">Menu</button></div>
+                </div>
+            </div>
+        </header>
+        <div class="menu-screen">
+            <aside class="site-menu">
+                <div class="com-bar">
+                    <div class="bar-row">
+                        <a href="#" class="bar-col center-bar-col"><div class="logo"></div></a>
+                        <button onclick="document.querySelector('.menu-screen').classList.toggle('active')" class="bar-col right-bar-col" >X</button>
+                    </div>
+                </div>
+                <div class="menu-section--black">
+                    <a class="sim-bar">Home</a>
+                    <a class="sim-bar">Contato</a>
+                    <a class="sim-bar">Canal do YouTube</a>
+                    <br>
+                </div>
+                <div class="menu-section--white">
+                    <a href="#" class="sim-bar title">Cursos</a>
+                    <ul>
+                        <a href="#" class="sim-bar item"><li>&#9642; Minicurso de Introdução de Desenvolvimento Web</li></a>
+                    </ul>
+                    <a href="#" class="sim-bar title">Ferramentas</a>
+                    <ul>
+                        <a href="#" class="sim-bar item"><li>&#9642; Troca-Trechos</li></a>
+                    </ul>
+                </div>
+                
+            </aside>
+            <button class="close-menu" onclick="document.querySelector('.menu-screen').classList.toggle('active')"></button>
+        </div>
+    </div>
+<main>
+    <section class="presentation-section">
+        <div class="md-container">
+            <div class="content">
+                <h1 class="title">Estudo</h1>
+                <div class="bar"></div>
+                <div class="description">
+                    <p>Esta é a seção de cursos do site. Atualmente, há apenas o minicurso introdutório de desenvolvimento web frontend (que está em desenvolvimento). </p>
+                </div>
+                <div class="link-row">
+                    <a href="introducao-web-frontend/index.html" class="link-button">Minicurso Introdutório ao Desenvolvimento Web Frontend</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+    <footer class="site-footer">
+        Oficina Web São José
+    </footer>
+</body>
+</html>

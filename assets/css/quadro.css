@@ -21,7 +21,8 @@
 }
 
 .container--quadro {
-    padding: 5vh 1rem 5vh;
+    /* padding: 5vh 1rem 5vh; */
+    margin: 0 10px;
 }
 .quadros-section {
     padding-bottom: 50vh;
@@ -35,10 +36,10 @@
     font-size: 95%;
     font-family: "Montserrat";
     max-width: 600px;
-    margin: 0;
+    margin: 0 auto 70px;
     padding: .2rem .8rem 1rem;
-    gap: .3rem;
     font-weight: 500;
+    display: block;
 }
 .quadro--blue {border-color: #98b6ee; color: #3964b6}
 .quadro--red {border-color: #cf5761; color: #ca515c}
@@ -52,6 +53,7 @@
 .quadro-item {
     border-radius: 2px;
     position: relative;
+    margin-bottom: .5rem;
 }
 
 .quadro a {
@@ -151,10 +153,10 @@
 }
 
 @media (max-width: 600px){
-    .container--quadro {
+    /* .container--quadro {
         padding-left: 0.2rem;
         padding-right: 0.2rem;
-    }
+    } */
     .quadro {
         font-size: 88%;
         padding-left: .4rem;

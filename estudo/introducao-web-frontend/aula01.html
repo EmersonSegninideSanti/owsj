@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/index.css">
+    <link rel="stylesheet" href="../../assets/css/quadro.css">
+    <link rel="stylesheet" href="../../assets/css/basscss.css">
+    <title>Des. Front-End</title>
+</head>
+<body>
+    <div class="header-wrapper">
+        <header class="site-header">
+            <div class="com-bar">
+                <div class="bar-row">
+                    <div class="bar-col left-bar-col"><a href="#">Home</a></div>
+                    <div class="bar-col"><a href="#" class="site-name">www.owsj.com.br</a></div>
+                    <div class="bar-col right-bar-col"><button onclick="document.querySelector('.menu-screen').classList.toggle('active')">Menu</button></div>
+                </div>
+            </div>
+        </header>
+        <div class="menu-screen">
+            <aside class="site-menu">
+                <div class="com-bar">
+                    <div class="bar-row">
+                        <a href="#" class="bar-col center-bar-col"><div class="logo"></div></a>
+                        <button onclick="document.querySelector('.menu-screen').classList.toggle('active')" class="bar-col right-bar-col" >X</button>
+                    </div>
+                </div>
+                <div class="menu-section--black">
+                    <a class="sim-bar">Home</a>
+                    <a class="sim-bar">Contato</a>
+                    <a class="sim-bar">Canal do YouTube</a>
+                    <br>
+                </div>
+                <div class="menu-section--white">
+                    <a href="#" class="sim-bar title">Cursos</a>
+                    <ul>
+                        <a href="#" class="sim-bar item"><li>&#9642; Minicurso de Introdução de Desenvolvimento Web</li></a>
+                    </ul>
+                    <a href="#" class="sim-bar title">Ferramentas</a>
+                    <ul>
+                        <a href="#" class="sim-bar item"><li>&#9642; Troca-Trechos</li></a>
+                    </ul>
+                </div>
+            </aside>
+            <button class="close-menu" onclick="document.querySelector('.menu-screen').classList.toggle('active')"></button>
+        </div>
+    </div>
+
+<main class="main-layout">
+    <div class="main-content">
+        <div class="presentation-section">
+            <div class="md-container">
+                <div class="content">
+                    <h1 class="title">Minicurso Introdutório de Desenvolvimento <span class="nowrap">Web Frontend</span></h1>
+                    <div class="bar"></div>
+                    <div class="link-row">
+                        <a href="#" class="link-button">Aula Anterior</a>
+                        <a href="#" class="link-button">Exercício</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="quadros-section">
+            
+<div class="container--quadro">
+    <div class="quadro  ">
+    <div class="quadro-item">
+    <span class="quadro-n">1</span>
+<h3 class="quadro-h">Navegadores</h3>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <img class="quadro-img" loading="lazy" decoding="async" src="assets/images/aulas/icones-de-browsers.png 
+" alt="Aqui deveria haver uma imagem">
+    </div>
+    </div>
+    <div class="quadro-item">
+        <pre class="quadro-t"> Navegadores são aplicativos que servem para obter e apresentar 
+páginas web.</pre>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro  ">
+    <div class="quadro-item">
+    <span class="quadro-n">2</span>
+<h3 class="quadro-h">URL ou link</h3>
+<pre class="quadro-t"> Unified Resource Locator -&gt;  Localizador uniforme de recursos 
+Toda página na internet tem sua URL. A URL é o elemento inicial para localizá
+la.</pre>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-t">  
+https://www.google.com/ 
+https://cloud.google.com/ 
+https://pt.wikipedia.org/wiki/Copa_do_Mundo_FIFA 
+https://www.youtube.com/... 
+https://www.amazon.com.br/ 
+https://www.amazon.com/ 
+</pre>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro  ">
+    <div class="quadro-item">
+    <span class="quadro-n">3</span>
+<h3 class="quadro-h">Composição de uma URL</h3>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-t">$gre;$https://</span>$blu;$pt.wikipedia.org/</span>wiki/Copa_do_Mund
+o_FIFA</pre>
+    </div>
+    </div>
+    <div class="quadro-item">
+        <pre class="quadro-t">  
+https -&gt; ? 
+pt.wikipedia.org -&gt; Nome do servidor</pre>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro  ">
+    <div class="quadro-item">
+    <span class="quadro-n">4</span>
+<h3 class="quadro-h">Endereço IP</h3>
+<pre class="quadro-t"> A sua máquina com seu navegador está conectada à internet. A 
+máquina do servidor está conectada à internet. Por exemplo, o servidor deste site 
+está nos Estados Unidos.</pre>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <img class="quadro-img" loading="lazy" decoding="async" src="/assets/images/aulas/nos-e-meios.jpg 
+" alt="Aqui deveria haver uma imagem">
+    </div>
+    </div>
+    <div class="quadro-item">
+        <pre class="quadro-t">  
+Para ver o IP de sua máquina no Prompt de comando do Windows: ipconfig 
+Para ver o IP de um site: ping www.google.com (por exemplo)</pre>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro  ">
+    <div class="quadro-item">
+    <span class="quadro-n">5</span>
+<pre class="quadro-t"> O nome de servidor é traduzido para um endereço IP.</pre>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-t"> 
+$gre;$https://</span>$blu;$pt.wikipedia.org/</span>$ora;$wiki/Copa_do_Mundo_FIFA</span> 
+Nome do servidor: wikipedia.org 
+IP do servidor: [2a02:ec80:700:ed1a::1]  
+</pre>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro  ">
+    <div class="quadro-item">
+    <span class="quadro-n">6</span>
+<h3 class="quadro-h">Visualizando uma imagem pelo navegador</h3>
+<pre class="quadro-t"> 
+O navegador pode apresentar uma imagem, que esteja na sua máquina, usando o 
+caminho de seu arquivo</pre>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-t">  
+1. Abra o explorador de arquivos de seu computador 
+2. Encontre uma imagem 
+3. Clique com o botão direito do mouse na imagem e escolha: copiar caminho 
+4. Abra o navegador  
+5. Cole o caminho no campo da URL</pre>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro  ">
+    <div class="quadro-item">
+    <span class="quadro-n">7</span>
+<pre class="quadro-t"> 
+A URL (que é só uma cadeia de caracteres) tem duas informações principais para 
+buscar uma página: 
+1) O endereço do servidor do site 
+2) O caminho da página</pre>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-t">$gre;$https://</span>$blu;$pt.wikipedia.org/</span>$ora;$wiki/Copa_do
+_Mundo_FIFA</span></pre>
+    </div>
+    </div>
+    <div class="quadro-item">
+        <pre class="quadro-t">Com essas duas informações o navegador escreverá uma mensagem 
+HTTP.</pre>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro  ">
+    <div class="quadro-item">
+    <span class="quadro-n">8</span>
+<h3 class="quadro-h">Mensagem HTTP</h3>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <img class="quadro-img" loading="lazy" decoding="async" src="/assets /images/aulas/pedido-e-resposta-http.jpg" alt="Aqui deveria haver uma imagem">
+    </div>
+    </div>
+    <div class="quadro-item">
+        <pre class="quadro-t"> Mas como essa mensagem chega até o outro lado? em código binário? 
+onde está o endereço IP? 
+A comunicação HTTP é, digamos, o primeiro nível da comunicação 
+cliente/servidor.</pre>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro  ">
+    <div class="quadro-item">
+    <span class="quadro-n">9</span>
+<h3 class="quadro-h">Observação</h3>
+<pre class="quadro-t"> Observe uma página de um website. Páginas contém diversos tipos de 
+elementos visuais. 
+Esses elementos visuais são prescritos pelo arquivo principal da página.</pre>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro quadro--orange ">
+    <div class="quadro-item">
+    <span class="quadro-n">10</span>
+<h3 class="quadro-h">Código e conteúdo da página</h3>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <img class="quadro-img" loading="lazy" decoding="async" src=" /assets/images/aulas/codigo-e-resultado.jpg" alt="Aqui deveria haver uma imagem">
+    </div>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro quadro--orange ">
+    <div class="quadro-item">
+    <span class="quadro-n">11</span>
+<h3 class="quadro-h">Escrevendo um "arquivo principal" de página</h3>
+<pre class="quadro-t"> Agora escreveremos nosso primeiro arquivo HTML.</pre>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-t">  
+No Windows) Abra o programa Notepad (Bloco de notas, em português) 
+No MacOS) Abra o programa TextEdit 
+Numa distro Linux) Abra o programa Gedit ou Kate 
+No celular) Use o site codepen.io</pre>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro quadro--orange ">
+    <div class="quadro-item">
+    <span class="quadro-n">12</span>
+<h3 class="quadro-h"> Estrutura básica de um arquivo HTML</h3>
+<pre class="quadro-t"> Escreva os códigos exatamente como aparecerem aqui. 
+Não copie e cole, digite. </pre>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-code"><code>  
+&lt;!DOCTYPE html&gt; 
+&lt;html&gt; 
+$blu;$&lt;head&gt; 
+&lt;/head&gt;</span> 
+$red;$ &lt;body&gt; 
+&lt;/body&gt;</span> 
+&lt;/html&gt; </code></pre>
+    </div>
+    </div>
+    <div class="quadro-item">
+        <pre class="quadro-t">head -&gt; cabeça 
+body -&gt; corpo</pre>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro quadro--orange ">
+    <div class="quadro-item">
+    <span class="quadro-n">13</span>
+<h3 class="quadro-h"> Prescrição de conteúdos para a página</h3>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-code"><code> &lt;!DOCTYPE html&gt; 
+&lt;html&gt; 
+$blu;$&lt;head&gt; 
+&lt;/head&gt;</span> 
+$red;$ &lt;body&gt; 
+$gre;$&lt;h1&gt;Título&lt;/h1&gt; 
+&lt;p&gt;Um parágrafo de exemplo. Texto, texto.&lt;/p&gt;</span> 
+&lt;/body&gt;</span> 
+&lt;/html&gt; 
+</code></pre>
+    </div>
+    </div>
+    <div class="quadro-item">
+        <pre class="quadro-t"> Pare e olhe se seu código está igual.</pre>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro quadro--orange ">
+    <div class="quadro-item">
+    <span class="quadro-n">14</span>
+<h3 class="quadro-h">Salvando o arquivo</h3>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-t">  
+1. Crie uma pasta, onde quiser, chamada [IntroFrontend] (sem colchetes) 
+2. Clique em [salvar como] 
+3. Escolha salvar com formato de texto 
+4. Escolha aquela pasta 
+5. Nomeie o arquivo [primeiro.html] (sem colchetes) </pre>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro quadro--orange ">
+    <div class="quadro-item">
+    <span class="quadro-n">15</span>
+<h3 class="quadro-h">Rodando o arquivo</h3>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-t">  
+1. Vá até a pasta [IntroFrontend] 
+2. Clique com o botão direito do mouse em [primeiro.html] 
+3. Abrir com &gt; Google Chrome (ou outro navegador)</pre>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro quadro--orange ">
+    <div class="quadro-item">
+    <span class="quadro-n">16</span>
+<h3 class="quadro-h">Pares de tags</h3>
+<pre class="quadro-t"> Esta é a estrutura da maioria dos elementos HTML:</pre>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-t"> &lt;tag&gt; conteúdo &lt;/tag&gt;</pre>
+    </div>
+    </div>
+    <div class="quadro-item">
+        <pre class="quadro-t"> 
+tag -&gt; rótulo 
+Perceba que a segunda tag (rótulo) é diferente da primeira.</pre>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro quadro--orange ">
+    <div class="quadro-item">
+    <span class="quadro-n">17</span>
+<h3 class="quadro-h">Links e Imagens</h3>
+<pre class="quadro-t"> Escreva os novos trechos.</pre>
+    </div>
+<div class="quadro-item">
+<p class="quadro-c"> primeiro.html</p>
+    <div class="quadro-display">
+    <pre class="quadro-code"><code> &lt;!DOCTYPE html&gt; 
+&lt;html&gt; 
+&lt;head&gt; 
+&lt;/head&gt; 
+&lt;body&gt; 
+&lt;h1&gt;Título&lt;/h1&gt; 
+&lt;p&gt;Um parágrafo de exemplo. Texto, texto.&lt;/p&gt; 
+$<span class='highlight'>;$ &lt;a href:"http://google.com"&gt;Google &lt;/a&gt; 
+&lt;img src="/images/aulas/icones-de-browsers.png"&gt; </span> 
+&lt;/body&gt; 
+&lt;/html&gt;</code></pre>
+    </div>
+    </div>
+    <div class="quadro-item">
+        <pre class="quadro-t"> Estes novos elementos precisam de informações extras: a fonte da 
+imagem e o destino do link. 
+Salve e recarregue a página no navegador.</pre>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro quadro--orange ">
+    <div class="quadro-item">
+    <span class="quadro-n">18</span>
+<h3 class="quadro-h">Variações de título</h3>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-code"><code>  
+&lt;!DOCTYPE html&gt; 
+&lt;html&gt; 
+&lt;head&gt; 
+&lt;/head&gt; 
+&lt;body&gt; 
+&lt;h1&gt;Título&lt;/h1&gt; 
+&lt;p&gt;Um parágrafo de exemplo. Texto, texto.&lt;/p&gt; 
+&lt;a href:"http://google.com"&gt;Google &lt;/a&gt; 
+&lt;img src="/images/aulas/icones-de-browsers.png "&gt; 
+$<span class='highlight'>;$ &lt;h1&gt;Título&lt;/h1&gt; 
+&lt;h2&gt;Título&lt;/h2&gt; 
+&lt;h3&gt;Título&lt;/h3&gt; 
+&lt;h4&gt;Título&lt;/h4&gt; 
+&lt;h5&gt;Título&lt;/h5&gt; 
+&lt;h6&gt;Título&lt;/h6&gt;</span> 
+&lt;/body&gt; 
+&lt;/html&gt; </code></pre>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro quadro--orange ">
+    <div class="quadro-item">
+    <span class="quadro-n">19</span>
+<h3 class="quadro-h">Parágrafos</h3>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-code"><code>&lt;!DOCTYPE html&gt; 
+&lt;html&gt; 
+&lt;head&gt; 
+&lt;/head&gt; 
+&lt;body&gt; 
+&lt;h1&gt;Título&lt;/h1&gt;  
+$gra;$ &lt;p&gt;Um parágrafo de exemplo. Texto, texto.&lt;/p&gt; 
+&lt;p&gt;Outro parágrafo de exemplo. Texto, texto, texto.&lt;/p&gt; </span> 
+&lt;a href:"http://google.com"&gt;Google &lt;/a&gt; 
+&lt;img src="/images/aulas/icones-de-browsers.png"&gt; 
+&lt;h1&gt;Título&lt;/h1&gt; 
+&lt;h2&gt;Título&lt;/h2&gt; 
+&lt;h3&gt;Título&lt;/h3&gt; 
+&lt;h4&gt;Título&lt;/h4&gt; 
+&lt;h5&gt;Título&lt;/h5&gt; 
+&lt;h6&gt;Título&lt;/h6&gt; 
+&lt;/body&gt; 
+&lt;/html&gt;</code></pre>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro  ">
+    <div class="quadro-item">
+    <span class="quadro-n">20</span>
+<h3 class="quadro-h">Criando uma página para um blog fictício</h3>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-t">Design disponível em:  <a href=' 
+https://canva.link/wjcth07rt6xz4qr '>https://canva.link/wjcth07rt6xz4qr 
+</a></pre>
+    </div>
+    </div>
+    <div class="quadro-item">
+        <pre class="quadro-t"> Atente-se a parte de fundo branco. 
+Vamos começar a escrever um arquivo HTML para esse site.</pre>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro  ">
+    <div class="quadro-item">
+    <span class="quadro-n">21</span>
+<h3 class="quadro-h"> Exercício</h3>
+<pre class="quadro-t"> Dentro da pasta [IntroFrontend], crie uma pasta chamada 
+[FulanoDasImpressoras]. Depois comece um novo arquivo pelo editor de texto. 
+Escreva um arquivo HTML com o seguinte conteúdo:</pre>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-t">  
+Review da Impressora Tal Modelo XYZ (título) 
+Por Fulano (10 de Junho de 2026) (autoria) 
+A impressora Tal modelo XYZ chega ao mercado com a proposta de oferecer um 
+equilíbrio interessante entre desempenho, facilidade de uso e custo operacional. 
+Logo nas primeiras semanas de testes, ficou evidente que o equipamento foi 
+projetado para atender tanto usuários domésticos quanto pequenos escritórios 
+que precisam de impressões frequentes sem complicações. Seu design discreto e 
+compacto facilita a instalação em ambientes com espaço limitado. 
+(aqui fica uma imagem) 
+Em termos de qualidade de impressão, a XYZ apresenta resultados consistentes. 
+Textos em preto são reproduzidos com excelente nitidez, enquanto gráficos 
+coloridos exibem boa definição e fidelidade de cores para a maioria das 
+aplicações cotidianas. Embora não tenha sido desenvolvida especificamente para 
+fotografia profissional, o desempenho em imagens é satisfatório para 
+apresentações, trabalhos acadêmicos e materiais promocionais simples. 
+A velocidade também merece destaque. Durante os testes, a impressora manteve 
+um ritmo competitivo tanto em documentos monocromáticos quanto coloridos. A 
+inicialização rápida reduz o tempo de espera para a primeira página, algo que faz 
+diferença para usuários que realizam impressões esporádicas ao longo do dia. A 
+conectividade sem fio funcionou de maneira estável, permitindo impressão direta 
+a partir de computadores, tablets e smartphones. 
+No quesito manutenção, a Tal XYZ demonstra uma abordagem amigável ao 
+usuário. A substituição dos cartuchos é simples e pode ser realizada em poucos 
+minutos. Além disso, o software de gerenciamento oferece alertas claros sobre 
+níveis de tinta e necessidades de manutenção preventiva. Durante o período de 
+avaliação, não foram observados atolamentos frequentes nem falhas relevantes 
+de alimentação de papel. 
+(aqui vai outra imagem) 
+O preço da impressora posiciona a XYZ na faixa intermediária do mercado. Embora 
+o investimento inicial não seja dos mais baixos, os custos de operação tendem a 
+compensar no médio prazo, especialmente para quem utiliza cartuchos de alto 
+rendimento. Considerando o conjunto de recursos oferecidos, a relação entre 
+custo e benefício é bastante favorável, tornando o equipamento uma opção 
+competitiva em sua categoria. 
+Para quem eu recomendo a XYZ? (subtítulo) 
+A impressora Tal XYZ é especialmente recomendada para estudantes, 
+profissionais autônomos e pequenos escritórios que necessitam de um 
+equipamento confiável para imprimir documentos, relatórios e materiais de apoio 
+regularmente. Sua combinação de facilidade de uso, boa velocidade e 
+manutenção simplificada atende bem usuários que valorizam praticidade sem 
+abrir mão da qualidade. 
+Por outro lado, usuários que trabalham com impressão fotográfica avançada ou 
+produção gráfica especializada podem encontrar limitações em comparação com 
+modelos mais voltados para aplicações profissionais. Para o público geral, 
+entretanto, a impressora Tal XYZ oferece um pacote equilibrado e competente, 
+capaz de atender a uma ampla variedade de necessidades do dia a dia.</pre>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro  ">
+    <div class="quadro-item">
+    <span class="quadro-n">22</span>
+<h3 class="quadro-h">Solução</h3>
+<pre class="quadro-t"> </pre>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-code"><code>  
+&lt;!DOCTYPE html&gt; 
+&lt;html&gt; 
+&lt;head&gt; 
+&lt;/head&gt; 
+&lt;body&gt; 
+&lt;h1&gt;Review da Impressora Tal Modelo XYZ&lt;/h1&gt; 
+&lt;p&gt;Por Fulano (10 de Junho de 2026)&lt;/p&gt; 
+&lt;p&gt;A impressora Tal modelo XYZ chega ao mercado com a proposta de oferecer 
+um equilíbrio interessante entre desempenho, facilidade de uso e custo 
+operacional. Logo nas primeiras semanas de testes, ficou evidente que o 
+equipamento foi projetado para atender tanto usuários domésticos quanto 
+pequenos escritórios que precisam de impressões frequentes sem complicações. 
+Seu design discreto e compacto facilita a instalação em ambientes com espaço 
+limitado.&lt;/p&gt; 
+&lt;img src="#"&gt; 
+&lt;p&gt;Em termos de qualidade de impressão, a XYZ apresenta resultados 
+consistentes. Textos em preto são reproduzidos com excelente nitidez, enquanto 
+gráficos coloridos exibem boa definição e fidelidade de cores para a maioria das 
+aplicações cotidianas. Embora não tenha sido desenvolvida especificamente para 
+fotografia profissional, o desempenho em imagens é satisfatório para 
+apresentações, trabalhos acadêmicos e materiais promocionais simples.&lt;/p&gt; 
+&lt;p&gt;A velocidade também merece destaque. Durante os testes, a impressora 
+manteve um ritmo competitivo tanto em documentos monocromáticos quanto 
+coloridos. A inicialização rápida reduz o tempo de espera para a primeira página, 
+algo que faz diferença para usuários que realizam impressões esporádicas ao 
+longo do dia. A conectividade sem fio funcionou de maneira estável, permitindo 
+impressão direta a partir de computadores, tablets e smartphones.  
+&lt;/p&gt; 
+&lt;p&gt;No quesito manutenção, a Tal XYZ demonstra uma abordagem amigável ao 
+usuário. A substituição dos cartuchos é simples e pode ser realizada em poucos 
+minutos. Além disso, o software de gerenciamento oferece alertas claros sobre 
+níveis de tinta e necessidades de manutenção preventiva. Durante o período de 
+avaliação, não foram observados atolamentos frequentes nem falhas relevantes 
+de alimentação de papel.&lt;/p&gt; 
+&lt;img src="#"&gt; 
+&lt;p&gt;O preço da impressora posiciona a XYZ na faixa intermediária do mercado. 
+Embora o investimento inicial não seja dos mais baixos, os custos de operação 
+tendem a compensar no médio prazo, especialmente para quem utiliza cartuchos 
+de alto rendimento. Considerando o conjunto de recursos oferecidos, a relação 
+entre custo e benefício é bastante favorável, tornando o equipamento uma opção 
+competitiva em sua categoria.&lt;/p&gt; 
+&lt;h3&gt; Para quem eu recomendo a XYZ? &lt;/h3&gt; 
+&lt;p&gt;A impressora Tal XYZ é especialmente recomendada para estudantes, 
+profissionais autônomos e pequenos escritórios que necessitam de um 
+equipamento confiável para imprimir documentos, relatórios e materiais de apoio 
+regularmente. Sua combinação de facilidade de uso, boa velocidade e 
+manutenção simplificada atende bem usuários que valorizam praticidade sem 
+abrir mão da qualidade.&lt;/p&gt; 
+&lt;p&gt;Por outro lado, usuários que trabalham com impressão fotográfica avançada 
+ou produção gráfica especializada podem encontrar limitações em comparação 
+com modelos mais voltados para aplicações profissionais. Para o público geral, 
+entretanto, a impressora Tal XYZ oferece um pacote equilibrado e competente, 
+capaz de atender a uma ampla variedade de necessidades do dia a dia.&lt;/p&gt; 
+&lt;/body&gt; 
+&lt;/html&gt; </code></pre>
+    </div>
+    </div>
+    <div class="quadro-item">
+        <pre class="quadro-t"> </pre>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro  ">
+    <div class="quadro-item">
+    <span class="quadro-n">23</span>
+<h3 class="quadro-h">Rodando o novo arquivo</h3>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-t">  
+1. Selecione a pasta [FulanoDasImpressoras] na pasta [IntroFrontend] 
+2. Clique em [salvar como] 
+3. Escolha salvar com formato de texto 
+4. Escolha aquela pasta 
+5. Nomeie o arquivo [review-tal-xyz.html] (escreva exatamente assim) 
+6. Vá até a pasta [FulanoDasImpressoras] 
+7. Clique com o botão direito do mouse em [review-tal-xyz.html] 
+8. Abrir com &gt; Google Chrome (ou outro navegador) </pre>
+    </div>
+    </div>
+    <div class="quadro-item">
+        <pre class="quadro-t">  Observe a página que criamos: não parece nada com nosso design. 
+</pre>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro quadro--blue ">
+    <div class="quadro-item">
+    <span class="quadro-n">24</span>
+<h3 class="quadro-h">Criando um arquivo de estilização de página</h3>
+<pre class="quadro-t">Agora vamos escrever um arquivo em outra linguagem: CSS. 
+Mas antes adicione a seguinte linha no espaço &lt;head&gt; do arquivo html.</pre>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-code"><code> &lt;!DOCTYPE html&gt; 
+&lt;html&gt; 
+&lt;head&gt; 
+$<span class='highlight'>;$ &lt;link rel="stylesheet" href="style.css"&gt; </span> 
+&lt;/head&gt; 
+&lt;body&gt; 
+&lt;h1&gt;Review da Impressora Tal Modelo XYZ&lt;/h1&gt; 
+...' 
+</code></pre>
+    </div>
+    </div>
+    <div class="quadro-item">
+        <pre class="quadro-t"> Crie um novo arquivo</pre>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro quadro--blue ">
+    <div class="quadro-item">
+    <span class="quadro-n">25</span>
+<h3 class="quadro-h">Cores</h3>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-code"><code>  
+p { 
+color: blue; 
+}</code></pre>
+    </div>
+    </div>
+    <div class="quadro-item">
+        <pre class="quadro-t"> Isto é uma regra CSS. Ela tem um alvo (no caso, elementos &lt;p&gt;) e um 
+espaço para declararmos alterações de aparência. 
+color -&gt; cor 
+Salve o arquivo como [style.css] na mesma pasta do arquivo html. E recarregue a 
+página.</pre>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro quadro--blue ">
+    <div class="quadro-item">
+    <span class="quadro-n">26</span>
+<h3 class="quadro-h">Alinhamento de texto</h3>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-code"><code>  
+p { 
+color: blue; 
+text-align: center; 
+} </code></pre>
+    </div>
+    </div>
+    <div class="quadro-item">
+        <pre class="quadro-t"> text-align -&gt; texto alinhar</pre>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro quadro--blue ">
+    <div class="quadro-item">
+    <span class="quadro-n">27</span>
+<h3 class="quadro-h">Largura</h3>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-code"><code>  
+p { 
+color: blue; 
+text-align: center; 
+width: 100px; 
+}</code></pre>
+    </div>
+    </div>
+    <div class="quadro-item">
+        <pre class="quadro-t"> width -&gt; largura 
+Algumas unidades de medida: 
+px -&gt; pixels 
+rem -&gt; altura de letra 
+% -&gt; Porcentagem relativa ao contentor deste conteúdo</pre>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro quadro--blue ">
+    <div class="quadro-item">
+    <span class="quadro-n">28</span>
+<h3 class="quadro-h">Margem</h3>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-code"><code>  
+p { 
+color: blue; 
+text-align: center; 
+width: 100px; 
+margin-left: 50px;   
+} </code></pre>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro quadro--blue ">
+    <div class="quadro-item">
+    <span class="quadro-n">29</span>
+<h3 class="quadro-h">Família de fonte</h3>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-code"><code>  
+p { 
+color: blue; 
+text-align: center; 
+width: 100px; 
+margin-left: 50px;  
+font-family: sans-serif; 
+}</code></pre>
+    </div>
+    </div>
+    <div class="quadro-item">
+        <pre class="quadro-t"> Algumas fontes comuns e como escrevê-las: 
+Arial, Helvetica, sans-serif 
+"Times New Roman" Georgia, serif 
+"Courier New" monospace 
+Agora vamos configurar as aparências conforme o design.</pre>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro  ">
+    <div class="quadro-item">
+    <span class="quadro-n">30</span>
+<h3 class="quadro-h">Começando pelas cores</h3>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-code"><code>  
+p { 
+color: #444; 
+} 
+h1, h2, h3, h4, h5, h6 { 
+color: #111; 
+}</code></pre>
+    </div>
+    </div>
+    <div class="quadro-item">
+        <pre class="quadro-t"> Escrevemos duas regras CSS. Uma para os elementos &lt;p&gt;, outra para 
+os elementos de título. 
+Temos um problema nessa configuração, como definir uma cor diferente para o 
+parágrafo de autoria?</pre>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro quadro--black ">
+    <div class="quadro-item">
+    <span class="quadro-n">31</span>
+<h3 class="quadro-h">Classificação de um parágrafo</h3>
+<pre class="quadro-t"> Abra o arquivo HTML, vamos fazer uma alteração nele.</pre>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-code"><code>  
+...&lt;/head&gt; 
+&lt;body&gt; 
+&lt;h1&gt;Review da Impressora Tal Modelo XYZ&lt;/h1&gt; 
+&lt;p $<span class='highlight'>;$class="autoria"</span>&gt;Por Fulano (10 de Junho de 2026)&lt;/p&gt; 
+&lt;p&gt;A impressora Tal modelo XYZ chega... </code></pre>
+    </div>
+    </div>
+    <div class="quadro-item">
+        <pre class="quadro-t"> Salve.</pre>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro quadro--black ">
+    <div class="quadro-item">
+    <span class="quadro-n">32</span>
+<h3 class="quadro-h">Uma regra CSS para um elemento &lt;p&gt; da classe [autoria]</h3>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-code"><code>  
+p { 
+color: #444; 
+} 
+h1, h2, h3, h4, h5, h6 { 
+color: #111; 
+} 
+$gra;$p.autoria { 
+color: #888; 
+} </span></code></pre>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro  ">
+    <div class="quadro-item">
+    <span class="quadro-n">33</span>
+<h3 class="quadro-h">Alinhando os textos</h3>
+<pre class="quadro-t"> Note no design que o título principal é alinhado ao centro e o parágrafo 
+de autoria é alinhado à direita</pre>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-code"><code> p { 
+color: #444; 
+} 
+h1, h2, h3, h4, h5, h6 { 
+color: #111; 
+} 
+$<span class='highlight'>;$h1 { 
+text-align: center; 
+}</span> 
+p.autoria { 
+color: #888; 
+$<span class='highlight'>;$text-align: right;</span></code></pre>
+    </div>
+    </div>
+    <div class="quadro-item">
+        <pre class="quadro-t"> text-align -&gt; alinhar texto</pre>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro quadro--yellow ">
+    <div class="quadro-item">
+    <span class="quadro-n">34</span>
+<h3 class="quadro-h">Obtendo a fonte Poppins</h3>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-t">  
+1. Vá para <a href=' https://fonts.google.com/'>fonts.google.com</a> 
+2. Pesquise por [poppins] e selecione essa fonte 
+3. Clique get font &gt; get embeded code &gt; import 
+4. Copie a linha desde [@import] até o ponto e vírgula</pre>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro quadro--yellow ">
+    <div class="quadro-item">
+    <span class="quadro-n">35</span>
+<h3 class="quadro-h">Aplicando a fonte</h3>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-code"><code>  
+$<span class='highlight'>;$@import 
+url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,5
+00;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=
+swap'); 
+body { 
+font-family: 'Poppins'; 
+} 
+</span> 
+p { 
+color: #444; 
+} 
+h1, h2, h3, h4, h5, h6 { 
+color: #111; 
+} 
+h1 { 
+text-align: center; 
+} 
+p.autoria { 
+color: #888; 
+text-align: right; 
+}</code></pre>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro  ">
+    <div class="quadro-item">
+    <span class="quadro-n">36</span>
+<h3 class="quadro-h">Alinhamento justificado dos parágrafos</h3>
+<pre class="quadro-t"> Observe que os parágrafos da página não são como os do design.</pre>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-code"><code>  
+@import 
+url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,5
+00;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=
+swap'); 
+body { 
+font-family: 'Poppins'; 
+} 
+p { 
+color: #444; 
+$<span class='highlight'>;$text-align: justify;</span> 
+} 
+h1, h2, h3, h4, h5, h6 { 
+color: #111; 
+} 
+h1 { 
+...</code></pre>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro  ">
+    <div class="quadro-item">
+    <span class="quadro-n">37</span>
+<h3 class="quadro-h">Uma caixa para conter estes elementos</h3>
+<pre class="quadro-t"> article -&gt; artigo (elemento de guardar elementos, próprio para textos de 
+blog e notícias.</pre>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-code"><code> &lt;!DOCTYPE html&gt; 
+&lt;html&gt; 
+&lt;head&gt; 
+&lt;link rel="stylesheet" href="style.css"&gt; 
+&lt;/head&gt; 
+&lt;body&gt; 
+$<span class='highlight'>;$&lt;article&gt;</span> 
+&lt;h1&gt;Review da Impressora Tal Modelo XYZ&lt;/h1&gt; 
+&lt;p class="autoria"&gt;Por Fulano (10 de Junho de 2026)&lt;/p&gt; 
+&lt;p&gt;A impressora Tal modelo XYZ chega ao mercado com a proposta de oferecer 
+um equilíbrio interessante entre desempenho, facilidade de uso e custo 
+operacional. Logo nas primeiras semanas de testes, ficou evidente que o 
+equipamento foi projetado para atender tanto usuários domésticos quanto 
+pequenos escritórios que precisam de impressões frequentes sem complicações. 
+Seu design discreto e compacto facilita a instalação em ambientes com espaço 
+limitado.&lt;/p&gt; 
+[...] 
+&lt;h3&gt; Para quem eu recomendo a XYZ? &lt;/h3&gt; 
+&lt;p&gt;A impressora Tal XYZ é especialmente recomendada para estudantes, 
+profissionais autônomos e pequenos escritórios que necessitam de um 
+equipamento confiável para imprimir documentos, relatórios e materiais de apoio 
+regularmente. Sua combinação de facilidade de uso, boa velocidade e 
+manutenção simplificada atende bem usuários que valorizam praticidade sem 
+abrir mão da qualidade.&lt;/p&gt; 
+&lt;p&gt;Por outro lado, usuários que trabalham com impressão fotográfica avançada 
+ou produção gráfica especializada podem encontrar limitações em comparação 
+com modelos mais voltados para aplicações profissionais. Para o público geral, 
+entretanto, a impressora Tal XYZ oferece um pacote equilibrado e competente, 
+capaz de atender a uma ampla variedade de necessidades do dia a dia.&lt;/p&gt; 
+$<span class='highlight'>;$&lt;/article&gt;</span> 
+&lt;/body&gt; 
+&lt;/html&gt;</code></pre>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro  ">
+    <div class="quadro-item">
+    <span class="quadro-n">38</span>
+<h3 class="quadro-h">Margens para o elemento &lt;article&gt;</h3>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro  ">
+    <div class="quadro-item">
+    <span class="quadro-n">39</span>
+<h3 class="quadro-h">Dimensionamento de imagem</h3>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-code"><code>  
+@import 
+url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,5
+00;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=
+swap'); 
+body { 
+font-family: 'Poppins'; 
+} 
+p { 
+color: #444; 
+text-align: justify; 
+} 
+h1, h2, h3, h4, h5, h6 { 
+color: #111; 
+} 
+h1 { 
+text-align: center; 
+} 
+p.autoria { 
+color: #888; 
+text-align: right; 
+} 
+article { 
+width: 60%; /* Problemático */ 
+margin-left: auto; 
+margin-right: auto; 
+margin-top: 50px; 
+margin-bottom: 10px; 
+}  
+$<span class='highlight'>;$img { 
+width: 100%; 
+height: auto; 
+}</span></code></pre>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro  ">
+    <div class="quadro-item">
+    <span class="quadro-n">40</span>
+<h3 class="quadro-h">Pesquisando um novo elemento</h3>
+<pre class="quadro-t"> Pesquise pelo navegador [html ul]</pre>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro  ">
+    <div class="quadro-item">
+    <span class="quadro-n">41</span>
+<h3 class="quadro-h">Atribuindo um título à página</h3>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-code"><code>  
+&lt;!DOCTYPE html&gt; 
+&lt;html&gt; 
+&lt;head&gt; 
+&lt;title&gt;Review X 123&lt;/title&gt; 
+&lt;link rel="stylesheet" href="style.css"&gt; 
+&lt;/head&gt; 
+&lt;body&gt; 
+&lt;/body&gt; 
+&lt;/html&gt;</code></pre>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="container--quadro">
+    <div class="quadro  ">
+    <div class="quadro-item">
+    <span class="quadro-n">42</span>
+<h3 class="quadro-h">Nova página para o blog</h3>
+<pre class="quadro-t"> Faremos um novo arquivo HTML dentro da pasta 
+[FulanoDasImpressoras]. Chamaremos [review-x-123.html].</pre>
+    </div>
+<div class="quadro-item">
+    <div class="quadro-display">
+    <pre class="quadro-code"><code>  
+&lt;!DOCTYPE html&gt; 
+&lt;html&gt; 
+&lt;head&gt; 
+&lt;title&gt;Review X 123&lt;/title&gt; 
+&lt;link rel="stylesheet" href="style.css"&gt; 
+&lt;/head&gt; 
+&lt;body&gt; 
+&lt;/body&gt; 
+&lt;/html&gt;</code></pre>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+
+
+
+        </section>
+    </div>
+    <div class="video-spacer"></div>
+</main>
+
+
+<footer class="site-footer">
+    Oficina Web São José
+</footer>
+
+    <div class="video-display">
+        <div class="border">
+            <iframe src="https://www.youtube.com/embed/Psv2dinTgSY?si=gYFigBdJscTVEefs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="video-button-container">
+        <button class="video-button">
+            <span class="video-button-text">Ocultar Vídeo</span>
+            <img class="yt-icon" src="../../assets/images/icons/Icone-Youtube.png">
+        </button>
+    </div>
+
+    <script src="../../assets/js/videoFunctions.js"></script>
+</body>
+</html>
