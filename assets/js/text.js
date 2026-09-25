@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }, {
-    // Define o gatilho exatamente no meio (50% do topo e 50% do fundo da tela)
-    rootMargin: "-50% 0px -50% 0px"
+    // Define o gatilho exatamente no meio (-50% do topo e -50% do fundo da tela)
+    rootMargin: "-30% 0px -30% 0px"
   });
 
   elementos.forEach(el => observer.observe(el));

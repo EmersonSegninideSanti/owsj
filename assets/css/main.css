@@ -4,17 +4,17 @@
 :root {
     --blue: #366bf2;
     --green: #3cba31;
-  --red: #ff2b2b;
-  --white: #fdfcfb;
-  --color: #faf9f6;
-  --beige-light-1: #f8f6ea;
-  --beige-light-2: #ebeabe;
-  --beige: #ccc298;
-  --beige-dark: #5e5149;
-  --brown: #281e1c;
-  --brown-dark: #090504;
-  --metal-blue: #7399b2;
-  --metal-orange: #e0b97f;
+    --red: #ff2b2b;
+    --white: #fdfcfb;
+    --color: #faf9f6;
+    --beige-light-1: #f8f6ea;
+    --beige-light-2: #ebeabe;
+    --beige: #ccc298;
+    --beige-dark: #5e5149;
+    --brown: #281e1c;
+    --brown-dark: #090504;
+    --metal-blue: #7399b2;
+    --metal-orange: #e0b97f;
 }
 body {
     background-color: var(--color);
@@ -25,11 +25,9 @@ h1,h2,h3,h4,h5,h6 {
 a:hover, button:hover {
     cursor: pointer;
 }
-
 .nowrap {
     white-space: nowrap;
 }
-
 
 /* ////// header ////// */
 
@@ -180,6 +178,12 @@ a:hover, button:hover {
     display: block;
 }
 
+/* ///// Main ///// */
+
+main {
+    min-height: 100vh;
+}
+
 /* ///// Footer ///// */
 
 .site-footer{
@@ -260,5 +264,5 @@ a:hover, button:hover {
 }
 .link-button:hover {
     cursor: pointer;
-    background-color: #000;
+    background-color: #131313;
 }
