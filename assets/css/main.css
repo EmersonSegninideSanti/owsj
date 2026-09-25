@@ -45,6 +45,11 @@ a:hover, button:hover {
     opacity: 75%;
     transition: opacity .2s ease-out;
 }
+.header-wrapper .bar {
+    height: 2px;
+    width: 24px;
+    background-color: #fff;
+}
 .site-header, .site-menu {
     background-color: var(--brown-dark);
     box-shadow: 0 0 3px #1111;
@@ -101,6 +106,16 @@ a:hover, button:hover {
 .site-header .left-bar-col,.site-header .right-bar-col {
     font-family: "Pathway Gothic One";
 }
+.site-header .right-bar-col, .site-header .left-bar-col {
+    display: flex;
+    gap: 10px;
+}
+.site-header .right-bar-col .menu-burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
 .site-header .site-name {
     font-family: "Times New Roman";
     letter-spacing: 1px;
@@ -144,6 +159,17 @@ a:hover, button:hover {
 .site-menu .com-bar .right-bar-col {
     align-items: flex-start;
 }
+.site-menu .com-bar .right-bar-col .menu-x {
+    height: 32px;
+    width: 32px;
+}
+.site-menu .com-bar .right-bar-col .menu-x .bar:nth-child(1) {
+    transform: translateY(2px) rotate(45deg);
+}
+.site-menu .com-bar .right-bar-col .menu-x .bar:nth-child(2) {
+    transform: translateY(0) rotate(-45deg);
+}
+
 .site-menu .menu-section--white {
     background-color: var(--white);
     color: #111;

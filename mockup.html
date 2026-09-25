@@ -128,9 +128,9 @@
         <header class="site-header">
             <div class="com-bar">
                 <div class="bar-row">
-                    <div class="bar-col left-bar-col"><a href="#">Home</a></div>
-                    <div class="bar-col"><a href="#" class="site-name">www.owsj.com.br</a></div>
-                    <div class="bar-col right-bar-col"><button onclick="document.querySelector('.menu-screen').classList.toggle('active')">Menu</button></div>
+                    <a class="bar-col left-bar-col">Home</a>
+                    <a class="bar-col site-name">www.owsj.com.br</a>
+                    <button class="bar-col right-bar-col menu-button" onclick="document.querySelector('.menu-screen').classList.toggle('active')" ><span>Menu</span><span class="menu-burger"><div class="bar"></div><div class="bar"></div><div class="bar"></div></span></button>
                 </div>
             </div>
         </header>
@@ -139,7 +139,9 @@
                 <div class="com-bar">
                     <div class="bar-row">
                         <a href="#" class="bar-col center-bar-col"><div class="logo"></div></a>
-                        <button onclick="document.querySelector('.menu-screen').classList.toggle('active')" class="bar-col right-bar-col" >X</button>
+                        <div class="bar-col right-bar-col">
+                            <button  class="menu-x" onclick="document.querySelector('.menu-screen').classList.toggle('active')"><div class="bar"></div><div class="bar"></div></button>
+                        </div>
                     </div>
                 </div>
                 <div class="menu-section--black">
