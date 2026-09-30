@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+.blue {color: #366bf2 !important;}
+.green {color: #3cba31 !important;}
+.red {color: #ff2b2b !important;}
+.orange {color: #ff6d19 !important;}
+.purple {color: #ac28f8 !important;}
+
 .main-layout {
     display: flex;
     width: 100%;
@@ -99,6 +106,7 @@
     opacity: 97%;
     font-size: 90%;
     font-weight: 400;
+    font-family: "Fira Code", monospace;
 }
 .quadro-display {
     box-shadow: 0 0 3px #1111;
@@ -109,7 +117,8 @@
 }
 .quadro-code {
     color: #fff;
-    font-weight: 100;
+    font-weight: 300;
+    font-family: 'Fira Code', monospace;
     overflow-y: auto;
     overflow-x: auto;
     max-height: 15rem;

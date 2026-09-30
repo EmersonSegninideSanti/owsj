@@ -110,6 +110,10 @@ a:hover, button:hover {
     display: flex;
     gap: 10px;
 }
+.site-header .logo {
+    height: 30px;
+    transform: translateY(1px)
+}
 .site-header .right-bar-col .menu-burger {
     display: flex;
     flex-direction: column;
@@ -132,6 +136,7 @@ a:hover, button:hover {
     height: 100vh;
     width: 280px;
     transition: 0.3s;
+    overflow-y: scroll;
 }
 .menu-screen.active .site-menu {
     right: 0;
@@ -153,8 +158,8 @@ a:hover, button:hover {
 .site-menu .com-bar .logo {
     width: 5rem;
     height: 5rem;
-    border-radius: 50%;;
-    border: 2px solid #fff;
+    /* border-radius: 50%;;
+    border: 2px solid #fff; */
 }
 .site-menu .com-bar .right-bar-col {
     align-items: flex-start;

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="assets/images/icons/owsj-icon-house-white.png">
     <title>Mockup</title>
     <style>
 /* ///// Main ///// */
@@ -32,8 +33,6 @@
 .site-hero .logo {
     width: 8rem;
     height: 8rem;
-    border: 4px solid var(--beige-light-2);
-    border-radius: 50%;
 }
 .site-hero .letreiro {
     text-transform: none;
@@ -128,7 +127,7 @@
         <header class="site-header">
             <div class="com-bar">
                 <div class="bar-row">
-                    <a class="bar-col left-bar-col">Home</a>
+                    <a class="bar-col left-bar-col"><span><img src="assets/images/icons/owsj-icon-home.png" alt="" class="logo"></span><span>Home</span></a>
                     <a class="bar-col site-name">www.owsj.com.br</a>
                     <button class="bar-col right-bar-col menu-button" onclick="document.querySelector('.menu-screen').classList.toggle('active')" ><span>Menu</span><span class="menu-burger"><div class="bar"></div><div class="bar"></div><div class="bar"></div></span></button>
                 </div>
@@ -138,7 +137,8 @@
             <aside class="site-menu">
                 <div class="com-bar">
                     <div class="bar-row">
-                        <a href="#" class="bar-col center-bar-col"><div class="logo"></div></a>
+                        <a href="#" class="bar-col center-bar-col"><img src="assets/images/icons/owsj-icon-black.png" class="logo" alt="">
+                    </a>
                         <div class="bar-col right-bar-col">
                             <button  class="menu-x" onclick="document.querySelector('.menu-screen').classList.toggle('active')"><div class="bar"></div><div class="bar"></div></button>
                         </div>
@@ -171,7 +171,7 @@
         <div class="md-container">
             <div class="row">
                 <div class="col">
-                    <div class="logo"></div>
+                     <img src="assets/images/icons/owsj-icon-beige.png" class="logo oculto" alt="">
                 </div>
                 <div class="col">
                     <h1 class="letreiro oculto">Oficina Web<br>São José</h1>
