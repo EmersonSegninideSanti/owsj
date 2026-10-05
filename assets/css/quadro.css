@@ -244,12 +244,13 @@
 }
 .video-button-container .video-button .video-button-text {
     display: block;
+    margin: 4px 0 4px 0;
 }
 .video-button-container .yt-icon {
     display: none; 
     height: 30px;
     width: auto; 
-    margin: 0 0 4px 0;
+    margin: 6px 0 6px 0;
 }
 /* .video-button-container .video-button.active .yt-icon {
     display: block;
