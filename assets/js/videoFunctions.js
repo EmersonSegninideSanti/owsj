@@ -21,6 +21,7 @@ function toggleVideo() {
         
         document.querySelector(".video-button-container").style.bottom = "0px";
         document.querySelector(".video-button-text").innerText = "Ocultar Vídeo";
+        document.querySelector(".video-button-text").style.margin = "4px 0 4px 0";
         document.querySelector(".yt-icon").style.display = "none";
     }else {
         //Tornar o Vídeo DESATIVO     / Vira botão Mostrar
@@ -30,6 +31,7 @@ function toggleVideo() {
 
         document.querySelector(".video-button-container").style.bottom = "35px";
         document.querySelector(".video-button-text").innerText = "Mostrar Vídeo";
+        document.querySelector(".video-button-text").style.margin = "0";
         document.querySelector(".yt-icon").style.display = "flex";
     }
 }

@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }, {
-    // Define o gatilho exatamente no meio (-50% do topo e -50% do fundo da tela)
+    // Define o gatilho em uma ârea entre -30% do topo e -30% do fundo da tela
     rootMargin: "-30% 0px -30% 0px"
   });
 
