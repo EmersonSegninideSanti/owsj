@@ -26,8 +26,18 @@
     text-align: justify;
     margin: 24px 0;
 }
-.presentation-section .description p {
+.presentation-section .description.exercises {
+    font-size: 1rem;
+}
+.presentation-section .description>* {
     margin-bottom: 8px;
+}
+.presentation-section .description.exercises>* {
+    margin-bottom: 12px;
+}
+.presentation-section .description .enunciado {
+    text-transform: none;
+    font-size: 1.2rem;
 }
 .presentation-section .items {
     font-weight: 600;

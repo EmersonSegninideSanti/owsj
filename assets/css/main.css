@@ -8,7 +8,7 @@
     --white: #fdfcfb;
     --color: #faf9f6;
     --beige-light-1: #f8f6ea;
-    --beige-light-2: #ebeabe;
+    --beige-light-2: #eceac0;
     --beige: #ccc298;
     --beige-dark: #5e5149;
     --brown: #281e1c;
@@ -256,7 +256,7 @@ main {
     }
 }
 /* Bootstrap */
-.ph-container, .sm-container, .md-container {
+.ph-container, .sm-container, .md-container, .lg-container {
     margin: 0 auto;
     padding: 0 18px;
 }
@@ -268,6 +268,9 @@ main {
 }
 .md-container {
     max-width: 768px;
+}
+.lg-container {
+    max-width: 992px;
 }
 
 /* large */
