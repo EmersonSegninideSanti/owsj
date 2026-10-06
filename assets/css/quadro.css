@@ -31,9 +31,6 @@
     /* padding: 5vh 1rem 5vh; */
     margin: 0 10px;
 }
-.quadros-section {
-    padding-bottom: 50vh;
-}
 .quadro {
     background-color: #fcfcfc;
     border: 4px solid var(--beige);

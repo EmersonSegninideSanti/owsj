@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 .presentation-section {
     padding: 80px 0;
 }
@@ -27,17 +28,37 @@
     margin: 24px 0;
 }
 .presentation-section .description.exercises {
-    font-size: 1rem;
+    font-size: .9rem;
 }
 .presentation-section .description>* {
     margin-bottom: 8px;
 }
 .presentation-section .description.exercises>* {
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 .presentation-section .description .enunciado {
     text-transform: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
+}
+.presentation-section .description .code-box,
+.presentation-section .description .text-box {
+    display: block;
+    font-family: "Fira Code";
+    white-space: pre !important;
+    padding: 10px;
+    box-shadow: 0 0 3px #1111;
+    border-radius: 5px;
+}
+.presentation-section .description .code-box {
+    background-color: var(--brown-dark);
+    color: #fff;
+    font-weight: 300;
+    overflow-x: auto;
+}
+.presentation-section .description .text-box {
+    background-color: var(--beige-light-2);
+    color: #000;
+    white-space: pre-wrap !important;
 }
 .presentation-section .items {
     font-weight: 600;
