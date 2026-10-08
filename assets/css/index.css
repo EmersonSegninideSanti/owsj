@@ -44,7 +44,6 @@
 .presentation-section .description .text-box {
     display: block;
     font-family: "Fira Code";
-    white-space: pre !important;
     padding: 10px;
     box-shadow: 0 0 3px #1111;
     border-radius: 5px;
@@ -54,11 +53,13 @@
     color: #fff;
     font-weight: 300;
     overflow-x: auto;
+    white-space: pre !important;
 }
 .presentation-section .description .text-box {
     background-color: var(--beige-light-2);
     color: #000;
     white-space: pre-wrap !important;
+    word-break: break-word;
 }
 .presentation-section .items {
     font-weight: 600;
